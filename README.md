@@ -8,13 +8,14 @@ Ensure you have the following installed:
 
 - Python 3.x
 - pip
+- Ollama2
 
 ## Setup
 
 1. Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    [git clone https://github.com/vickky06/Llama-Rag-Gmail.git]
     cd <repository_name>
     ```
 
@@ -26,7 +27,12 @@ Ensure you have the following installed:
 
 3. Make sure you have the `credentials.json` file from Google Cloud. This should be of type "Desktop" for OAuth2.
 
-4. Run the `gmails.py` script to authenticate and fetch emails:
+4. Run Ollama server :
+   ```bash
+    ollama serve
+    ```
+
+6. Run the `gmails.py` script to authenticate and fetch emails and create embeddings:
 
     ```bash
     python gmails.py
@@ -43,7 +49,7 @@ Ensure you have the following installed:
     python server.py
     ```
 
-2. In another terminal window, start Ollama:
+2. In another terminal window, start Ollama <if not runnning already>:
 
     ```bash
     ollama serve
